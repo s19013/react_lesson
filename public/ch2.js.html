@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+      getDOM(),
+      document.getElementById("root")
+      )
+      function getDOM() {
+        const css1 = {
+          "color":"red",
+          "background-color": '#f0f0ff',
+          "font-size": '2em'
+        }
+        const css2 = {
+          "color":"red",
+          "background-color": '#f0f0ff',
+          "font-size": '2em'
+        }
+      return (
+        <div>
+          <p style = {css1}>A</p>
+          <p style = {css2}>V</p>
+        </div>
+      )
+    }
+    </script>
+  </body>
+</html>
